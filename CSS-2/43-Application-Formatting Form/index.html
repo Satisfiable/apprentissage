@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formatting Form</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+    
+        body{
+            margin: 20px;
+        }
+
+        .form-group{
+            margin-bottom: 7px;
+        }
+        
+        label{
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+
+        .form-control{
+            width: 100%;
+            padding: 7px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        .form-control:focus{
+            border-color: #ff4d4d;
+            outline: 0;
+        }
+
+        .btn{
+            background-color: #007bff;
+            color: white;
+            padding: 6px 12px;
+            border: 1px solid #007bff;
+            border-radius: 4px;
+        }
+        
+        .btn:hover{
+            background-color: #0069d9;
+            border-color: #0062cc;
+        }
+
+        .col-25{
+            float: left;
+            width: 25%;
+        }
+
+        .col-75{
+            float: left;
+            width: 75%;
+        }
+
+        .clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #form-2{
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .is-success{
+            border-color: #27a745;
+        }
+
+        .is-error{
+            border-color: #dc3545;
+        }
+
+        .is-warning{
+            border-color: #ffc107;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div id="form-1">
+        <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" name="fullName" class="form-control is-success">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control is-error">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" class="form-control is-warning"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country</label>
+            <select name="country" class="form-control">
+                <option value="Almanya">Almanya</option>
+                <option value="İngiltere">İngiltere</option>
+                <option value="Türkiye">Türkiye</option>
+            </select>
+        </div>
+        
+        <input type="submit" value="Submit" class="btn">
+    </div>
+    
+    <br><hr><br>
+
+    <div id="form-2">
+        <div class="form-group clearfix">
+            <div class="col-25">
+                <label for="fullName">Full Name</label>
+            </div>
+            
+            <div class="col-75">
+                <input type="text" name="fullName" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group clearfix">
+            <div class="col-25">
+                <label for="email">Email</label>
+            </div>
+            
+            <div class="col-75">
+                <input type="email" name="email" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group clearfix">
+            <div class="col-25">
+                <label for="message">Message</label>
+            </div>
+            
+            <div class="col-75">
+                <textarea name="message" class="form-control"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group clearfix">
+            <div class="col-25">
+                <label for="country">Country</label>
+            </div>
+            
+            <div class="col-75">
+                <select name="country" class="form-control">
+                    <option value="Almanya">Almanya</option>
+                    <option value="İngiltere">İngiltere</option>
+                    <option value="Türkiye">Türkiye</option>
+                </select>
+            </div>
+        </div>
+        
+        <input type="submit" value="Submit" class="btn" style="margin-left: 25%;">
+    </div>
+    
+</body>
+</html>
