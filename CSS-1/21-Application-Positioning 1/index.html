@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Positioning 1</title>
+    <style>
+
+        .box{
+            width: 160px;
+            height: 160px;
+        }
+
+        .mbox{
+            width: 30px;
+            height: 30px;
+            background-color: darkslategray;
+            position: absolute;
+            top: 50px;
+            left: 60px;
+        }
+
+        #first{
+            background-color: royalblue;
+            width: 100%;
+            position: sticky;
+            top: 50px;
+        }
+
+        #second{
+            background-color: seagreen;
+            position: relative;
+        }
+
+        #third{
+            background-color: crimson;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+    
+    </style>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem laboriosam at debitis delectus nihil quis expedita ex non repellendus, cumque provident alias ab eos. Eum repudiandae nostrum consequuntur. Qui porro excepturi itaque delectus deserunt eum in dicta maxime nemo cumque reiciendis suscipit harum quas quia accusamus dolor repudiandae officia aspernatur corrupti odio dignissimos, repellat nulla quis! Culpa tempore quam ipsum hic, voluptatum officia? Perspiciatis fugiat sit sequi, voluptatum tempora repellendus repellat id animi incidunt placeat sapiente alias architecto maxime. Enim quidem, iusto eveniet magnam deleniti aliquid ducimus eligendi deserunt blanditiis officia. Molestias similique quod voluptatibus minus sint. Magnam ipsum commodi natus vero a, nisi, sequi quis vel officiis doloribus, ipsa excepturi tenetur architecto nam sint fugit aut ut nesciunt? Maiores voluptatum ea placeat magnam praesentium, dolor fugiat, omnis repellat nemo et consequuntur libero perferendis dicta voluptatem cupiditate eum eaque iusto aperiam doloribus iure adipisci culpa asperiores dignissimos minima! Veritatis, ad!</p>
+
+    <div class="box" id="first">box 1</div>
+    <div class="box" id="second">
+        <div class="mbox"></div>
+    </div>
+    <div class="box" id="third">box 3</div>
+
+    <div style="height: 2000px;"></div>
+    
+</body>
+</html>

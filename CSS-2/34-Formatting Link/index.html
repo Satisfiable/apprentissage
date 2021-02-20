@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formatting Link and Button</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1bd13a8496.js" crossorigin="anonymous"></script>
+    <style>
+    
+        body{
+            font-family: 'Lato', sans-serif;
+        }
+
+        .btn{
+            padding: 12px 30px;
+            border: none;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+        }
+
+        .primary{
+            background-color: #007bff;
+            color: white;
+        }
+
+        .primary:hover{
+            opacity: 0.7;
+        }
+
+        .secondary{
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .secondary:hover{
+            opacity: 0.7;
+        }
+
+        .success{
+            background-color: #28a745;
+            color: white;
+        }
+
+        .success:hover{
+            opacity: 0.7;
+        }
+
+        .danger{
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .danger:hover{
+            opacity: 0.7;
+        }
+
+        .warning{
+            background-color: #ffc107;
+            color: white;
+        }
+        
+        .warning:hover{
+            opacity: 0.7;
+        }
+
+        .btn-xs{
+            padding: 8px 18px;
+            font-size: 12px;
+        }
+
+        .btn-sm{
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+
+        .btn-md{
+            padding: 12px 22px;
+            font-size: 16px;
+        }
+
+        .btn-lg{
+            padding: 14px 24px;
+            font-size: 18px;
+        }
+
+        .btn-bg{
+            font-size: 40px;
+        }
+
+        .btn-block{
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .rounded{
+            border-radius: 50%;
+        }
+
+        .primary-outline{
+            background-color: white;
+            color: #007bff;
+            border: 1px solid #007bff;
+        }
+
+        .primary-outline:hover{
+            background-color: #007bff;
+            color: white;
+        }
+
+        .secondary-outline{
+            background-color: white;
+            color: #6c757d;
+            border: 1px solid #6c757d;
+        }
+
+        .secondary-outline:hover{
+            background-color: #6c757d;
+            color: white;
+        }
+
+        .success-outline{
+            background-color: white;
+            color: #28a745;
+            border: 1px solid #28a745;
+        }
+
+        .success-outline:hover{
+            background-color: #28a745;
+            color: white;
+        }
+
+        .danger-outline{
+            background-color: white;
+            color: #dc3545;
+            border: 1px solid #dc3545;
+        }
+
+        .danger-outline:hover{
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .warning-outline{
+            background-color: white;
+            color: #ffc107;
+            border: 1px solid #ffc107;
+        }
+
+        .warning-outline:hover{
+            background-color: #ffc107;
+            color: white;
+        }
+
+        i{
+            margin-right: 5px;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <a href="/link1" class="btn primary">Primary</a>
+    <a href="/link2" class="btn secondary">Secondary</a>
+    <a href="/link3" class="btn success">Success</a>
+    <a href="/link4" class="btn danger">Danger</a>
+    <a href="/link5" class="btn warning">Warning</a>
+
+    <br><br><br><br>
+
+    <a href="/link1" class="btn primary btn-xs">Primary</a>
+    <a href="/link2" class="btn secondary btn-sm">Secondary</a>
+    <a href="/link3" class="btn success btn-md">Success</a>
+    <a href="/link4" class="btn danger btn-lg">Danger</a>
+    <a href="/link5" class="btn warning btn-bg">Warning</a>
+
+    <br><br><br><br>
+
+    <a href="/link6" class="btn primary btn-block">Primary</a>
+    <a href="/link7" class="btn secondary btn-block">Secondary</a>
+
+    <a href="/link8" class="btn success rounded">%50</a>
+
+    <br><br><br><br>
+
+    <a href="/link1" class="btn primary-outline">
+        <i class="fas fa-home"></i> Primary
+    </a>
+    <a href="/link2" class="btn secondary-outline">
+        <i class="fas fa-trash-alt"></i> Secondary
+    </a>
+    <a href="/link3" class="btn success-outline">
+        <i class="fab fa-android"></i> Success
+    </a>
+    <a href="/link4" class="btn danger-outline">
+        <i class="fab fa-apple"></i> Danger
+    </a>
+    <a href="/link5" class="btn warning-outline">
+        <i class="fab fa-angular"></i> Warning
+    </a>
+    
+</body>
+</html>
