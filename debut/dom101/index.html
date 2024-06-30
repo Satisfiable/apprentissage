@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card-header">
+      <h3 id="titre" class="header-titre h3">Ce que faire</h3>
+    </div>
+    <ul>
+      <li>mission 1</li>
+      <li>mission 2</li>
+      <li>mission 3</li>
+    </ul>
+
+    <script>
+      let résultat;
+
+      résultat = document.getElementById("titre");
+      résultat = document.getElementById("titre").id;
+      résultat = document.getElementById("titre").className;
+      résultat = document.getElementById("titre").classList;
+
+      document.getElementById("titre").style.fontSize = "30px";
+      document.getElementById("titre").style.color = "blue";
+
+      document.getElementById("titre").innerText = "Ce que faire Application";
+      document.getElementById("titre").innerHTML =
+        "<p>Ce que faire Application<p>";
+
+      résultat = document.querySelector("#titre");
+      résultat = document.querySelector(".header-titre");
+      résultat = document.querySelector("div");
+
+      résultat = document.querySelector("li");
+
+      résultat = console.log(résultat);
+    </script>
+  </body>
+</html>
