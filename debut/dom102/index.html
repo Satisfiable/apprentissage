@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card-header">
+      <h3 id="titre" class="header-titre h3">Ce que faire</h3>
+    </div>
+    <ul id="listedestaches1">
+      <li class="tache">mission 1</li>
+      <li class="tache">mission 2</li>
+      <li class="tache">mission 3</li>
+    </ul>
+    <ul id="listedestaches2">
+      <li class="tache">mission 1</li>
+      <li class="tache">mission 2</li>
+      <li class="tache">mission 3</li>
+    </ul>
+    <script>
+      let résultat;
+
+      // résultat = document.getElementsByClassName("tache")[0];
+
+      let listedestaches = document.getElementsByClassName("tache");
+
+      for (let i = 0; i < listedestaches.length; i++) {
+        console.log(document.getElementsByClassName("tache")[i]);
+      }
+
+      for (let i of listedestaches) {
+        // of: elementler
+        console.log(i);
+      }
+
+      for (let i in listedestaches) {
+        // in: index numaraları
+        console.log(i);
+      }
+
+      console.log(résultat);
+
+      listedestaches = document.querySelectorAll("#listedestaches1 li");
+    </script>
+  </body>
+</html>
