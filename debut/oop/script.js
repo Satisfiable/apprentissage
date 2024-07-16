@@ -13,7 +13,10 @@ Question.prototype.controlerlaréponse = function(réponse) {
     return réponse === this.bonne_réponse;
 } 
 
-let questions = [new Question("1-Qu'est-ce que JavaScript exactement?", {a: "C'est un livre.", b: "C'est une personne", c: "C'est un langage de programmation."}, "c"), new Question("2-Qu'est-ce que JavaScript exactement?", {a: "C'est un livre.", b: "C'est une personne", c: "C'est un langage de programmation."}, "c"), new Question("3-Qu'est-ce que JavaScript exactement?", {a: "C'est un livre.", b: "C'est une personne", c: "C'est un langage de programmation."}, "c"), new Question("4-Qu'est-ce que JavaScript exactement?", {a: "C'est un livre.", b: "C'est une personne", c: "C'est un langage de programmation."}, "c")]
+let questions = [new Question("1-Qu'est-ce que JavaScript exactement?", {a: "C'est un livre.", b: "C'est une personne", c: "C'est un langage de programmation."}, "c"), 
+    new Question("2-Qu'est-ce que JavaScript exactement?", {a: "C'est un livre.", b: "C'est une personne", c: "C'est un langage de programmation."}, "c"), 
+        new Question("3-Qu'est-ce que JavaScript exactement?", {a: "C'est un livre.", b: "C'est une personne", c: "C'est un langage de programmation."}, "c"), 
+        new Question("4-Qu'est-ce que JavaScript exactement?", {a: "C'est un livre.", b: "C'est une personne", c: "C'est un langage de programmation."}, "c")]
 
 // console.log(question1.question_texte)
 // console.log(question1.réponses)
@@ -30,14 +33,30 @@ Quiz.prototype.apporter_question = function() {
 
 const quiz = new Quiz(questions);
 
-document.querySelector(".btn-start").addEventListener("click", function() {
-    if (quiz.questions.length != quiz.question_index) {
-        console.log(quiz.apporter_question());
+document.querySelector(".btn_start").addEventListener("click", function() {
+    document.querySelector(".quiz_box").classList.add("active");
+    montrer_question(quiz.apporter_question());
+});
+
+document.querySelector(".next_btn").addEventListener("click", function() {
+    if (quiz.questions.length != quiz.question_index + 1) {
         quiz.question_index += 1;
+        montrer_question(quiz.apporter_question());
     }
     else {
         alert("QUESTIONNAIRE EST FINI!")
     }
-});
+})
 
+function montrer_question(variable) {
+    let question = `<span>${variable.question_texte}</span>`;
+    let réponses = '';
+    for (let réponse_index in variable.réponses) {
+        réponses += `<div class="option">
+                        <span><b>${réponse_index}</b>: ${variable.réponses[réponse_index]}
+                     </div>`
+    }
+    document.querySelector(".question_text").innerHTML = question;
+    document.querySelector(".option_list").innerHTML = réponses;
+}
 
