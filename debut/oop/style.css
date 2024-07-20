@@ -1,0 +1,122 @@
+.btn_start, .quiz_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.quiz_box {
+  width: 550px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  align-items:flex-start;
+
+  transform: translate(-50%,-50%) scale(0.7);
+  transition: all 0.3s ease;
+}
+
+.quiz_box.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%,-50%) scale(1);
+}
+
+.quiz_box .question_text {
+  font-size: 25px;
+}
+
+.quiz_box .option_list {
+  padding: 18px 0;
+}
+
+.quiz_box .option_list .option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #151D3B;
+  border-radius: 5px;
+  padding: 8px 15px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.quiz_box .option_list .option:last-child {
+  margin-bottom: 0;
+}
+
+.quiz_box .option_list .option:hover {
+  color: #112B2C;
+  background-color: #FFD33D;
+}
+
+.quiz_box .option_list .option.correct {
+  color: #155724;
+  background-color: #d4edda;
+}
+
+.quiz_box .option_list .option.incorrect {
+  color: #721c24;
+  background-color: #f8d7da;
+}
+
+.card-footer {
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+
+  transform: scale(0.9);
+  transition: all 0.2s ease;
+}
+
+.card-footer.montrer {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.quiz_box .option_list .option.disabled {
+  pointer-events: none;
+  transform: scale(1);
+}
+
+.card_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.score_box {
+  width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  pointer-events: none;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.score_box.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.score_box .icon {
+  font-size: 90px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.score_box .score_text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
