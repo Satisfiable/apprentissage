@@ -69,9 +69,14 @@
   padding: 0;
   opacity: 0;
   pointer-events: none;
-
   transform: scale(0.9);
   transition: all 0.2s ease;
+}
+
+.card-footer .next_btn {
+  padding: 8px 15px;
+  background-color: #ffd23dd8;
+  font-weight: 500;
 }
 
 .card-footer.montrer {
@@ -119,4 +124,35 @@
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.footer-wrapper .timer {
+  display: flex;
+  border-radius: 3px;
+  background-color: #e9959d;
+  padding: 2.5px 3.6px;
+}
+
+.footer-wrapper .timer .time-text {
+  margin-right: 5px;
+}
+
+.footer-wrapper .timer .time-duration.disactive {
+  opacity: 0;
+}
+
+.footer-wrapper .time-line {
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  height: 20%;
+  background-color: #f0a500;
 }
