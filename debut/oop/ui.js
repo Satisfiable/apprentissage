@@ -6,5 +6,8 @@ function UI() {
   this.correctIcon = '<div class="icon"><i class="fas fa-check"></i></div>',
   this.incorrectIcon = '<div class="icon"><i class="fas fa-times"></i></div>',
   this.btn_recommencer = document.querySelector(".btn_recommencer"),
-  this.btn_terminer = document.querySelector(".btn_terminer");
+  this.btn_terminer = document.querySelector(".btn_terminer"),
+  this.time_text = document.querySelector(".time-text"),
+  this.time_duration = document.querySelector(".time-duration"),
+  this.time_line = document.querySelector(".time-line");
 }
