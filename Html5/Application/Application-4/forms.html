@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register Screen</title>
+</head>
+<body>
+
+    <h1>Register Screen</h1>
+    <hr>
+
+    <form action="/register_page" target="_blank" method="POST">
+    
+        <fieldset>
+            <legend>Account Informations</legend>
+            <p>Username: <input type="text" name="username" placeholder="Kullanıcı adınızı girin." required></p>
+            <p>Password: <input type="password" name="userpassword" placeholder="Şifrenizi girin." required></p>
+            <p>Email: <input type="email" name="useremail" placeholder="E-posta adresinizi girin." required></p>            
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Personal Informations</legend>
+            <p>First name: <input type="text" name="firstname" placeholder="Adınızı girin." required></p>
+            <p>Last name: <input type="text" name="lastname" placeholder="Soyadınızı girin." required></p>
+            <p>
+                Contry:
+                <select name="contry">
+                    <option>Turkey</option>
+                    <option>Germany</option>
+                    <option>France</option>
+                    <option>Russia</option>
+                    <option>USA</option>
+                    <option>China</option>
+                </select>
+            </p>
+            <p>
+                Gender:
+                <input type="radio" name="gender" checked> Male 
+                <input type="radio" name="gender"> Female
+                <input type="radio" name="gender"> Other
+            </p>
+            <p>
+                Your hobbies and interests: <br>
+                <input type="checkbox" name="hobby1"> Watch movie <br>
+                <input type="checkbox" name="hobby2"> Read the book <br>
+                <input type="checkbox" name="hobby3"> Write code <br>
+                Your other hobbies (If you have more than one hobby. Please Use ',') <input type="text" name="other_hobby">
+            </p>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    
+    
+</body>
+</html>

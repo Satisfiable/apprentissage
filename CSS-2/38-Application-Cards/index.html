@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cards</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+    
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card{
+            width: 40%;
+            margin: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            border-radius: 5px;
+
+            -webkit-transition: box-shadow 0.3s;
+            transition: box-shadow 0.3s;
+            
+            background-color: #ececec;
+        }
+
+        .card:hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .card-image{
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+            -webkit-transition: opacity 200ms ease-in;
+            transition: opacity 200ms ease-in;
+        }
+
+        .card-image:hover{
+            opacity: 0.8;
+        }
+
+        .card-body{
+            padding: 10px 16px;
+        }
+
+        .card-title{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card-text{
+            font-size: 14px;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="card">
+
+        <img src="img/1.jpeg" alt="Card Image" class="card-image">
+        <div class="card-body">
+            <h4 class="card-title">Card Title</h4>
+            <p class="card-text">Card Text</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

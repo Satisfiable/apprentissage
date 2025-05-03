@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Media Queries & Breakpoints</title>
+    <style>
+
+        /*
+        body{
+            background-color: brown;
+        }
+    
+        h1{
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 700px){
+            
+            h1{
+                font-size: 16px;
+            }
+
+            body{
+                background-color: green;
+            }
+
+        }
+
+        @media screen and (max-width: 400px){
+
+            h1{
+                font-size: 12px;
+            }
+
+            body{
+                background-color: yellow;
+            }
+
+        }
+        */
+
+        *{
+            box-sizing: border-box;
+        }
+
+        .box{
+            width: 25%;
+            height: 250px;
+            background-color: yellow;
+            float: left;
+            border: 1px solid blue;
+        }
+
+        @media screen and (max-width: 700px){
+
+            .box{
+                width: 50%;
+                background-color: green;
+            }
+
+        }
+
+        @media screen and (max-width: 400px){
+
+            .box{
+                width: 100%;
+                background-color: cadetblue;
+            }
+
+        }
+        
+    
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    
+</body>
+</html>
